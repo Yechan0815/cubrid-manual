@@ -23,7 +23,7 @@ unloaddb.sh
 	**제약사항**
 	  * Linux 환경
 	  * DBA 권한이 있는 사용자만 실행 가능
-::
+
 
 다음은 **unloaddb.sh** 에 대한 [options]이다.
 
