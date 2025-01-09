@@ -777,7 +777,7 @@ When a deadlock occurs, lock information of that transaction is written into the
     
     wait:
         client: public@testhost|csql(21529)
-        lock: X_LOCK (oid=0|650|6, table=t)
+        lock: X_LOCK (oid=0|650|5, table=t)
         sql: update [t] [t] set [t].[a]= ?:0  where [t].[a]= ?:1
         bind: 4
         bind: 2
@@ -791,7 +791,7 @@ When a deadlock occurs, lock information of that transaction is written into the
 
     wait:
         client: public@testhost|csql(21541) (Deadlock Victim)
-        lock: X_LOCK (oid=0|650|5, table=t)
+        lock: X_LOCK (oid=0|650|6, table=t)
         sql: update [t] [t] set [t].[a]= ?:0  where [t].[a]= ?:1
         bind: 3
         bind: 1
