@@ -773,21 +773,21 @@ I/O 읽기를 많이 발생시킨 질의를 기록한다. cubrid.conf의 **sql_t
         lock: X_LOCK (oid=0|650|5, table=t)
         sql: update [t] [t] set [t].[a]= ?:0  where [t].[a]= ?:1
         bind: 4
-        bind: 2
+        bind: 1
 
     hold:
         client: public@testhost|csql(21529)
         lock: X_LOCK (oid=0|650|6, table=t)
         sql: update [t] [t] set [t].[a]= ?:0  where [t].[a]= ?:1
-        bind: 4
+        bind: 5
         bind: 2
 
     wait:
         client: public@testhost|csql(21541) (Deadlock Victim)
         lock: X_LOCK (oid=0|650|6, table=t)
         sql: update [t] [t] set [t].[a]= ?:0  where [t].[a]= ?:1
-        bind: 3
-        bind: 1
+        bind: 6
+        bind: 2
  
 *   hold: 잠금을 소유하고 있는 객체
 
